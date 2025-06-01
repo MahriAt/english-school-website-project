@@ -1,16 +1,5 @@
 <?php
-$username = "root";
-$password = "";
-$database = "english_school"; 
-$servername = "127.0.0.1";
-$port = 8111;
-
-
-$conn = new mysqli($servername, $username, $password, $database, $port);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
+require_once 'db_connect.php';
 $message = "";
 
 ini_set('display_errors', 1);
