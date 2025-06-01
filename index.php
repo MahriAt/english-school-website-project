@@ -1,7 +1,7 @@
 <?php
 require_once 'db_connect.php';
 session_start();
-$loginError = "Username or Passwor is incorrect";
+$loginError = " ";
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
